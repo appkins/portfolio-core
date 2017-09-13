@@ -1,20 +1,17 @@
-<md-grid-list cols="3">
-    <md-grid-tile *ngFor="let project of projects">
-
-        <md-card class="project-card">
-            <md-card-header class="project-header">
-                <md-card-title class="project-title">{{project.title}}</md-card-title>
-                <md-card-subtitle class="project-subtitle">{{project.company}}</md-card-subtitle>
-            </md-card-header>
-            <md-card-content class="project-content">
-                <p class="lead">
-                    {{project.description}}
-                </p>
-            </md-card-content>
-            <md-card-actions>
-                <button md-button>LIKE</button>
-                <button md-button>SHARE</button>
-            </md-card-actions>
-        </md-card>
-    </md-grid-tile>
-</md-grid-list>
+<div class="wrapper" fxLayout="row" fxLayoutWrap fxLayoutGap="10px" fxLayoutAlign="center stretch">
+    <md-card fxFlex fxFlexFill *ngFor="let project of projects" class="project-card mat-elevation-z1">
+        <md-card-header class="project-header">
+            <md-card-title class="project-title">{{project.title}}</md-card-title>
+            <md-card-subtitle class="project-subtitle">{{project.company}}</md-card-subtitle>
+        </md-card-header>
+        <md-card-content class="project-content">
+            <p class="lead">
+                {{project.description}}
+            </p>
+        </md-card-content>
+        <md-card-actions>
+            <button md-button>LIKE</button>
+            <button md-button>SHARE</button>
+        </md-card-actions>
+    </md-card>
+</div>

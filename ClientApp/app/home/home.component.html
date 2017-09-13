@@ -7,25 +7,27 @@
     </md-grid-tile>
 </md-grid-list> -->
 
-<div class="wrapper">
-    <div fxLayout="row" ngxSplit="row" style="height:100%;">
-        <div fxFlex="60%" fxFlex.gt-sm="60%" fxHide.md ngxSplitArea class="c1r1 title-content">
-            <h2 fxFlex>Nicholas Atkins</h2>
+<div class="wrapper" fxLayoutGap="10px">
+    <div fxLayout="row" fxFlex="60" fxLayoutWrap class="c1r1 title-content">
+        <h2 fxFlex class="mat-display-4">appkins</h2>
+        <h2 fxFlex class="mat-display-1">develop | design</h2>
+    </div>
+    <div fxLayout="column" fxFlex="40" class="c1r1 content-2">
+        <div fxLayout="row" fxFlex="50" class="sub-content">
+            <div fxFlex="50" fxLayoutWrap>
+                <h1 class="mat-headline web-headline">web</h1>
+                <h4 class="mat-subheading-1"> development</h4>
+                <button class="sm-btn" md-raised-button color="warn">learn more</button>
+            </div>
+            <div fxFlex="50" fxLayoutWrap>
+                    <h1 class="mat-headline app-headline">app</h1>
+                    <h4 class="mat-subheading-1"> development</h4>
+                    <button class="sm-btn" md-raised-button color="accent">learn more</button>
+            </div>
         </div>
-        <div fxLayout="column" fxFlex="40%" fxFlex.gt-sm="40%" fxHide.md ngxSplit="column">
-            <div fxLayout="row" fxFlex="40%" ngxSplit="column">
-                <h1 fxFlex>Lorem</h1>
-                <h2 fxFlex>Lorem</h2>
-            </div>
-            <div fxLayout="column" fxFlex="40%" ngxSplit="column">
-                <div fxFlex="50%" ngxSplitArea class="c2r1_body">
-                    <div class="c2r1_header">Column #2 - Row #1</div>
-                    <h1>Layout Dashboard</h1>
-                </div>
-                <div fxFlex="50%" ngxSplitArea class="c2r2">
-                    <div class="c2r2_header">Column #2 - Row #2</div>
-                </div>
-            </div>
+        <div fxFlex="50" class="sub-content" fxLayoutWrap>
+            <h1 class="mat-headline projects-headline">projects</h1>
+            <button md-raised-button color="primary">learn more</button>
         </div>
     </div>
 </div>

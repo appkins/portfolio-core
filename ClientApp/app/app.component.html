@@ -1,22 +1,23 @@
 <md-sidenav-container class="app-container">
-    <md-sidenav #sidenav mode="side">
-        <app-sidebar class="sidebar"></app-sidebar>
-    </md-sidenav>
 
     <!-- <button md-mini-fab="md-mini-fab" class="side-btn" (click)="sidenav.toggle()">
     <md-icon>menu</md-icon>
   </button> -->
 
     <md-toolbar>
-
-        <button md-raised-button color="warn" (click)="sidenav.toggle()">
-                Contact
-            </button>
-        <span class="nav-spacer"></span>
         <nav md-tab-nav-bar="md-tab-nav-bar" aria-label="navigation links">
             <a md-tab-link="md-tab-link" *ngFor="let tabLink of tabLinks" [routerLink]="tabLink.link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{tabLink.label}}</a>
         </nav>
+        <span class="nav-spacer"></span>
+        <button md-raised-button class="contact-button" color="warn" (click)="sidenav.toggle()">
+                Contact
+            </button>
+
+
     </md-toolbar>
 
     <router-outlet></router-outlet>
+    <md-sidenav #sidenav mode="side" class="contact-bar" position="end">
+        <app-sidebar class="sidebar"></app-sidebar>
+    </md-sidenav>
 </md-sidenav-container>
