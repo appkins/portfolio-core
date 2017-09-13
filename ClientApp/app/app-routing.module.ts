@@ -18,6 +18,11 @@ const routes: Routes = [
     path: 'web-development',
     loadChildren: './webdev/webdev.module#WebdevModule',
     data: { preload: true }  // Custom property we will use to track what route to be preloaded
+  },
+  {
+    path: 'projects',
+    loadChildren: './projects/projects.module#ProjectsModule',
+    data: { preload: true }
   }
 ];
 @NgModule({

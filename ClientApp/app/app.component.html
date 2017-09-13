@@ -1,4 +1,4 @@
-<md-sidenav-container class="example-sidenav-fab-container">
+<md-sidenav-container class="app-container">
     <md-sidenav #sidenav mode="side">
         <app-sidebar class="sidebar"></app-sidebar>
     </md-sidenav>
@@ -8,12 +8,9 @@
   </button> -->
 
     <md-toolbar>
-        <button md-icon-button color="warn" (click)="sidenav.toggle()">
-        <md-icon class="nav-icon">import_contacts</md-icon>
-        </button>
 
         <button md-raised-button color="warn" (click)="sidenav.toggle()">
-                <md-icon class="nav-icon">import_contacts</md-icon> Contact
+                Contact
             </button>
         <span class="nav-spacer"></span>
         <nav md-tab-nav-bar="md-tab-nav-bar" aria-label="navigation links">

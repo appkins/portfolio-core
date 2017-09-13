@@ -1,0 +1,15 @@
+.project-card {
+    // min-height: 500px;
+    margin: 11px;
+    .project-header {
+        .project-header-image {}
+        .project-title {}
+        .project-subtitle {}
+    }
+    .project-content {
+        //max-height: 257px;
+        height: 15em;
+        overflow: hidden;
+        margin-bottom: 12px;
+    }
+}

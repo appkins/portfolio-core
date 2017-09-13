@@ -12,15 +12,18 @@ $custom-typography: mat-typography-config( $font-family: 'Poppins, sans-serif', 
 @include mat-checkbox-typography($custom-typography);
 // Override typography for all Angular Material, including mat-base-typography and all components.
 @include angular-material-typography($custom-typography);
+$md-salmon: ( 50: #f7eded, 100: #ebd1d1, 200: #ddb2b3, 300: #cf9394, 400: #c57c7d, 500: #bb6566, 600: #b55d5e, 700: #ac5353, 800: #a44949, 900: #963738, A100: #ffe3e3, A200: #ffb0b0, A400: #ff7d7d, A700: #ff6363, contrast: ( 50: #000000, 100: #000000, 200: #000000, 300: #000000, 400: #000000, 500: #ffffff, 600: #ffffff, 700: #ffffff, 800: #ffffff, 900: #ffffff, A100: #000000, A200: #000000, A400: #000000, A700: #000000, ));
 // hue.
+$md-forest: ( 50: #f0f0ef, 100: #d9dad6, 200: #c0c1bb, 300: #a7a89f, 400: #94968b, 500: #818376, 600: #797b6e, 700: #6e7063, 800: #646659, 900: #515346, A100: #f1fbb7, A200: #e7f986, A400: #e4ff4d, A700: #e0ff34, contrast: ( 50: #000000, 100: #000000, 200: #000000, 300: #000000, 400: #000000, 500: #000000, 600: #ffffff, 700: #ffffff, 800: #ffffff, 900: #ffffff, A100: #000000, A200: #000000, A400: #000000, A700: #000000, ));
+$md-sand: ( 50: #f8f1ea, 100: #efdcca, 200: #e4c5a7, 300: #d9ae83, 400: #d09c69, 500: #c88b4e, 600: #c28347, 700: #bb783d, 800: #b46e35, 900: #a75b25, A100: #ffefe5, A200: #ffd0b2, A400: #ffb17f, A700: #ffa165, contrast: ( 50: #000000, 100: #000000, 200: #000000, 300: #000000, 400: #000000, 500: #000000, 600: #000000, 700: #000000, 800: #ffffff, 900: #ffffff, A100: #000000, A200: #000000, A400: #000000, A700: #000000, ));
 $md-mcprimary: ( 50: #afafa3, 100: #8b8b7a, 200: #6e6e60, 300: #48483f, 400: #373730, 500: #272722, 600: #171714, 700: #060605, 800: #000000, 900: #000000, A100: #c6c682, A200: #9b9b47, A400: #4c4c30, A700: #37372b, contrast: ( 50: #000000, 100: #000000, 200: #ffffff, 300: #ffffff, 400: #ffffff, 500: #ffffff, 600: #ffffff, 700: #ffffff, 800: #ffffff, 900: #ffffff, A100: #000000, A200: #000000, A400: #ffffff, A700: #ffffff, ));
 $md-mcaccent: ( 50: #a7a7a7, 100: #808080, 200: #646464, 300: #414141, 400: #313131, 500: #222222, 600: #131313, 700: #030303, 800: #000000, 900: #000000, A100: #be8585, A200: #904d4d, A400: #443333, A700: #312c2c, contrast: ( 50: #000000, 100: #000000, 200: #ffffff, 300: #ffffff, 400: #ffffff, 500: #ffffff, 600: #ffffff, 700: #ffffff, 800: #ffffff, 900: #ffffff, A100: #000000, A200: #ffffff, A400: #ffffff, A700: #ffffff, ));
-$candy-app-primary: mat-palette($md-mcprimary);
-$candy-app-accent: mat-palette($md-mcaccent);
+$candy-app-primary: mat-palette($md-salmon);
+$candy-app-accent: mat-palette($md-forest);
 // The warn palette is optional (defaults to red).
-$candy-app-warn: mat-palette($mat-red);
+$candy-app-warn: mat-palette($md-sand);
 // Create the theme object (a Sass map containing all of the palettes).
-$candy-app-theme: mat-dark-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
+$candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-app-warn);
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.

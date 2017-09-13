@@ -12,5 +12,6 @@ export class AppComponent {
   tabLinks = [
     {label: 'appkins', link: '/'},
     {label: 'web development', link: '/web-development'},
+    {label: 'projects', link: '/projects'}
   ];
 }
