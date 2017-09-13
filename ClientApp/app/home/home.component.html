@@ -1,0 +1,31 @@
+<!-- <md-grid-list gutterSize="12" cols="8" rows="4">
+    <md-grid-tile colspan="3" rowspan="4" style="background:#333;font-size:50px;">
+        appkins
+    </md-grid-tile>
+    <md-grid-tile *ngFor="let tile of tiles" [colspan]="tile.cols" [rowspan]="tile.rows" [style.background]="tile.color">
+        {{tile.text}}
+    </md-grid-tile>
+</md-grid-list> -->
+
+<div class="wrapper">
+    <div fxLayout="row" ngxSplit="row" style="height:100%;">
+        <div fxFlex="60%" fxFlex.gt-sm="60%" fxHide.md ngxSplitArea class="c1r1">
+            <h2 fxFlex>Nicholas Atkins</h2>
+        </div>
+        <div fxLayout="column" fxFlex="40%" fxFlex.gt-sm="40%" fxHide.md ngxSplit="column">
+            <div fxLayout="row" fxFlex="40%" ngxSplit="column">
+                <h1 fxFlex>Lorem</h1>
+                <h2 fxFlex>Lorem</h2>
+            </div>
+            <div fxLayout="column" fxFlex="40%" ngxSplit="column">
+                <div fxFlex="50%" ngxSplitArea class="c2r1_body">
+                    <div class="c2r1_header">Column #2 - Row #1</div>
+                    <h1>Layout Dashboard</h1>
+                </div>
+                <div fxFlex="50%" ngxSplitArea class="c2r2">
+                    <div class="c2r2_header">Column #2 - Row #2</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

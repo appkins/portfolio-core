@@ -1,0 +1,25 @@
+<md-sidenav-container class="example-sidenav-fab-container">
+    <md-sidenav #sidenav mode="side">
+        <app-sidebar class="sidebar"></app-sidebar>
+    </md-sidenav>
+
+    <!-- <button md-mini-fab="md-mini-fab" class="side-btn" (click)="sidenav.toggle()">
+    <md-icon>menu</md-icon>
+  </button> -->
+
+    <md-toolbar>
+        <button md-icon-button color="warn" (click)="sidenav.toggle()">
+        <md-icon class="nav-icon">import_contacts</md-icon>
+        </button>
+
+        <button md-raised-button color="warn" (click)="sidenav.toggle()">
+                <md-icon class="nav-icon">import_contacts</md-icon> Contact
+            </button>
+        <span class="nav-spacer"></span>
+        <nav md-tab-nav-bar="md-tab-nav-bar" aria-label="navigation links">
+            <a md-tab-link="md-tab-link" *ngFor="let tabLink of tabLinks" [routerLink]="tabLink.link" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{tabLink.label}}</a>
+        </nav>
+    </md-toolbar>
+
+    <router-outlet></router-outlet>
+</md-sidenav-container>
